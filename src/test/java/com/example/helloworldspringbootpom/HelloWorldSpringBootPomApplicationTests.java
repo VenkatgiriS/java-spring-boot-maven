@@ -22,7 +22,7 @@ class HelloWorldSpringBootPomApplicationTests {
 	void shouldGreetHelloWorld() throws Exception {
 		mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk())
-				.andExpect(content().string(equalTo("Hello!This is Venkat's DevOps World.Implemented using Ansible ,Docker and trying k8s deployment")));
+				.andExpect(content().string(equalTo("Hello!This is Venkat's DevOps World.Implemented using Ansible ,Docker and trying k8s now")));
 	}
 
 }
