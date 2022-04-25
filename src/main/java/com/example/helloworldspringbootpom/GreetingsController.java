@@ -8,6 +8,6 @@ public class GreetingsController {
 
     @GetMapping("/")
     public String getGreeting() {
-        return "Hello! Deployed using Ansible,Docker,Kubernetes";
+        return "Hello World! Deployed using Ansible,Docker,Kubernetes";
     }
 }
