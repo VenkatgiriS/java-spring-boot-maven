@@ -22,7 +22,7 @@ class HelloWorldSpringBootPomApplicationTests {
 	void shouldGreetHelloWorld() throws Exception {
 		mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk())
-				.andExpect(content().string(equalTo("Hello!Deployed using Ansible ,Docker and k8s using Jenkins Pipeline. Implemented in Docker server as well as K8s environment")));
+				.andExpect(content().string(equalTo("Hello! Deployed using Ansible,Docker,Kubernetes")));
 	}
 
 }
